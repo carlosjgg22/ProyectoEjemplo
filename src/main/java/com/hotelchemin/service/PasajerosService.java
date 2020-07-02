@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.google.gson.Gson;
 import com.hotelchemin.modelo.Pasajero;
+import com.hotelchemin.repositorio.IRepositorioPass;
 import com.hotelchemin.repositorio.PasajeroDao;
 
 @Service
@@ -17,6 +18,9 @@ public class PasajerosService {
 
 @Autowired 
 PasajeroDao pasajeroDAO;  
+
+@Autowired 
+IRepositorioPass pasajeroRepositorio;
 
 List<Pasajero> listaPasajero = new ArrayList<Pasajero>();
 
@@ -40,7 +44,7 @@ List<Pasajero> listaPasajero = new ArrayList<Pasajero>();
 		
 	}
 		}
-	/**
+	
 	public List<Pasajero> listarPasajero(){
 		listaPasajero = (List<Pasajero>) pasajeroRepositorio.findAll();
 		return listaPasajero; 
@@ -62,5 +66,6 @@ List<Pasajero> listaPasajero = new ArrayList<Pasajero>();
 		}
 		
 	}
-	**/
+	
+	
 }
