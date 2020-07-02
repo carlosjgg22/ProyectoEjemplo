@@ -30,13 +30,14 @@ pipeline {
 		     sh 'mvn package'		
 		        }		
 		    }
-	   
-	   
-	    stage('Deploy Stage') {
-            steps {
-                sh 'mvn deploy'
-            }
-        }
+
+       stage('Deploy Stage'){
+		    steps{
+		     sh 'mvn clean deploy'		
+		        }		
+		    }
+	  
+	  
   }	
 }
 	
