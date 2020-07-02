@@ -1,0 +1,6 @@
+com\hotelchemin\controller\ReservasRestController.class
+com\hotelchemin\modelo\Pasajero.class
+com\hotelchemin\service\PasajerosService.class
+com\hotelchemin\App.class
+com\hotelchemin\repositorio\IRepositorioPass.class
+com\hotelchemin\repositorio\PasajeroDao.class
